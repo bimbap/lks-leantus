@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Create config.yml
         run: |
-          cat <<EOF>> config/config.yaml
+          cat <<EOF>> ./config/config.yaml
           alerting:
             github:
               repository-url: "https://github.com/bimbap/lks-leantus"
@@ -79,5 +79,5 @@ jobs:
         with:
           task-definition: task-definitions/lks-gatus-td.json
           service: lks-gatus-service
-          cluster: lks-gatus-ecs
+          cluster: lks-leantime-ecs
           wait-for-service-stability: true
