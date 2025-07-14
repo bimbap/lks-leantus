@@ -36,9 +36,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Create config.yml
+      - name: Config.yml
         run: |
-          cat <<EOF>> ./config/config.yaml
+          cat <<EOF > ./config/config.yaml
           alerting:
             github:
               repository-url: "https://github.com/bimbap/lks-leantus"
@@ -46,7 +46,7 @@ jobs:
 
           endpoints:
             - name: Leantime
-              url: ${{ secrets.ALB_ENDPOINT }}
+              url: "Lks-Leantime-ALB-953545929.us-east-1.elb.amazonaws.com"
               interval: 5m
               conditions:
                 - "[STATUS] == 200"
@@ -54,10 +54,10 @@ jobs:
                 - "[RESPONSE_TIME] < 500"
               alerts:
                 - type: github
-                  failure-threshold: 2
-                  success-threshold: 3
+                  failure-threshold: 3
+                  success-threshold: 5
                   send-on-resolved: true
-                  description: "Server down :>"
+                  description: "Server down!!"
           EOF
       - name: Build Gatus Image
         run: docker build -t lks-gatus .
