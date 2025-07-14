@@ -75,7 +75,7 @@ jobs:
       - name: Push Gatus Image to ECR
         run: docker push 639134755428.dkr.ecr.us-east-1.amazonaws.com/lks-gatus:latest
       - name: Deploy Gatus Task Definition
-        uses: aws-actions/amazon-ecs-deploy-task-definiton@v1
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: task-definitions/lks-gatus-td.json
           service: lks-gatus-service
