@@ -91,6 +91,5 @@
     },
     "registeredAt": "2025-07-14T07:46:58.142Z",
     "registeredBy": "arn:aws:sts::639134755428:assumed-role/voclabs/user4100116=JAKARTA_TIMUR_2_-_IBRAHIM",
-    "enableFaultInjection": false,
     "tags": []
 }
