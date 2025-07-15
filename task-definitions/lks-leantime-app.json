@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:639134755428:task-definition/lks-leantime-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:639134755428:task-definition/lks-leantime-app:12",
     "containerDefinitions": [
         {
             "name": "lks-leantime",
@@ -25,7 +25,6 @@
                     "value": "Asia/Jakarta"
                 }
             ],
-            "environmentFiles": [],
             "mountPoints": [
                 {
                     "sourceVolume": "Public_Files",
@@ -66,7 +65,6 @@
                     "valueFrom": "arn:aws:ssm:us-east-1:639134755428:parameter/lks/db/port"
                 }
             ],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -74,8 +72,7 @@
                     "awslogs-create-group": "true",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -84,7 +81,7 @@
     "taskRoleArn": "arn:aws:iam::639134755428:role/LabRole",
     "executionRoleArn": "arn:aws:iam::639134755428:role/LabRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 12,
     "volumes": [
         {
             "name": "Public_Files",
@@ -173,7 +170,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-07-14T03:44:46.386Z",
+    "registeredAt": "2025-07-15T07:54:44.730Z",
     "registeredBy": "arn:aws:sts::639134755428:assumed-role/voclabs/user4100116=JAKARTA_TIMUR_2_-_IBRAHIM",
     "tags": []
 }

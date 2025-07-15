@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:639134755428:task-definition/lks-gatus-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:639134755428:task-definition/lks-gatus-app:6",
     "containerDefinitions": [
         {
             "name": "lks-gatus",
@@ -43,7 +43,7 @@
     "taskRoleArn": "arn:aws:iam::639134755428:role/LabRole",
     "executionRoleArn": "arn:aws:iam::639134755428:role/LabRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -89,7 +89,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-07-14T07:46:58.142Z",
+    "registeredAt": "2025-07-15T07:55:58.191Z",
     "registeredBy": "arn:aws:sts::639134755428:assumed-role/voclabs/user4100116=JAKARTA_TIMUR_2_-_IBRAHIM",
     "tags": []
 }

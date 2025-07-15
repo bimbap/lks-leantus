@@ -25,7 +25,7 @@ jobs:
       - name: Deploy ECS Task Definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: task-definitions/lks-leantime-td.json
+          task-definition: task-definitions/lks-leantime-app.json
           service: lks-leantime-app-service
           cluster: lks-leantime-app
           wait-for-service-stability: true
@@ -77,7 +77,7 @@ jobs:
       - name: Deploy Gatus Task Definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: task-definitions/lks-gatus-td.json
-          service: lks-gatus-service
-          cluster: lks-leantime-ecs
+          task-definition: task-definitions/lks-gatus-app.json
+          service: lks-gatus-app-service
+          cluster: lks-leantime-app
           wait-for-service-stability: true
