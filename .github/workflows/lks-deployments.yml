@@ -46,7 +46,7 @@ jobs:
 
           endpoints:
             - name: Leantime
-              url: "http://Lks-Leantime-ALB-953545929.us-east-1.elb.amazonaws.com"
+              url: "http://lks-pm-alb-815936537.us-east-1.elb.amazonaws.com"
               interval: 5m
               conditions:
                 - "[STATUS] == 200"
